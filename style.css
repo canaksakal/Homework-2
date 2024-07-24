@@ -1,0 +1,91 @@
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 400px;
+  height: 820px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
+}
+
+.cards {
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.top-card {
+  position: relative;
+  color: white;
+  background-color: #0fa0ed;
+  flex: 4;
+  margin: 8px;
+  border-radius: 4px;
+}
+.card-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.icon-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icon-design{
+  background-color: white;
+  border-radius: 50%;
+  width: 20px;
+}
+.mid-card {
+  padding: 10px;
+}
+
+.bottom-card {
+  flex: 1;
+  margin: 8px;
+  color: #2855ac;
+  font-weight: bold;
+}
+
+.choose-button {
+  position: absolute;
+  border: none;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 45%;
+  bottom: 10px;
+  right: 10px;
+  width: 80px;
+  height: 40px;
+}
+.choose-button:hover {
+  background-color: rgb(223, 220, 220);
+}
+
+.animation-effect {
+  background-color: #eeb116;
+  padding: 6px;
+  border-radius: 5px;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes example {
+  0% {
+    background-color: #eeb116;
+  }
+  25% {
+    background-color: red;
+  }
+  50% {
+    background-color: green;
+  }
+  100% {
+    background-color: blue;
+  }
+}
