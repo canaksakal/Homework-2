@@ -17,13 +17,11 @@ chooseButtonDOM.forEach((button) => {
 });
 
 priceDOM.forEach((price) => {
-  //const currentPriceDOM = document.querySelectorAll(".current-price");
-  //const discountDOM = document.createElement("span");
   price.parentElement.parentElement.parentElement.addEventListener(
     "mouseenter",
 
-    function (e) {
-      const currentPriceDOM = e.currentTarget.querySelector(".current-price");
+    function () {
+      const currentPriceDOM = this.querySelector(".current-price");
       currentPriceDOM.style.textDecoration = "line-through";
 
       const discountDOM = document.createElement("span");
@@ -34,11 +32,11 @@ priceDOM.forEach((price) => {
   );
   price.parentElement.parentElement.parentElement.addEventListener(
     "mouseleave",
-    function (e) {
-      const currentPriceDOM = e.currentTarget.querySelector(".current-price");
+    function () {
+      const currentPriceDOM = this.querySelector(".current-price");
       currentPriceDOM.style.textDecoration = "none";
 
-      const discountDOM = e.currentTarget.querySelector(".discount");
+      const discountDOM = this.querySelector(".discount");
       price.removeChild(discountDOM);
     }
   );
